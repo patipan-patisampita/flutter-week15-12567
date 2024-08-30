@@ -21,12 +21,28 @@ class ColumnDemo extends StatelessWidget {
               child: Center(child: Text('ROW-1')),
             ),
           ),
-            Container(
+          Container(
             // width: 100,
             height: 60,
             child: const Card(
               color: Colors.green,
               child: Center(child: Text('ROW-2')),
+            ),
+          ),
+          Container(
+            // width: 100,
+            height: 60,
+            child: const Card(
+              color: Colors.green,
+              child: Center(child: Text('ROW-3')),
+            ),
+          ),
+          Container(
+            // width: 100,
+            height: 60,
+            child: const Card(
+              color: Colors.green,
+              child: Center(child: Text('ROW-4')),
             ),
           ),
         ],
