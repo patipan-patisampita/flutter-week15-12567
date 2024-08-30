@@ -14,9 +14,19 @@ class ColumnDemo extends StatelessWidget {
       body: Column(
         children: [
           Container(
+            // width: 100,
+            height: 60,
             child: const Card(
               color: Colors.green,
               child: Center(child: Text('ROW-1')),
+            ),
+          ),
+            Container(
+            // width: 100,
+            height: 60,
+            child: const Card(
+              color: Colors.green,
+              child: Center(child: Text('ROW-2')),
             ),
           ),
         ],
