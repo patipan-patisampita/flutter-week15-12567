@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 class ListViewBuilderDemo extends StatelessWidget {
-  const ListViewBuilderDemo({super.key});
+  final List<String> entries = ['A', 'B', 'C'];
+  final List<int> colorCodes = [600, 500, 100];
+
+  ListViewBuilderDemo({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -15,14 +18,13 @@ class ListViewBuilderDemo extends StatelessWidget {
         child: ListView.builder(
           padding: const EdgeInsets.all(8),
           itemCount: 5,
-          itemBuilder: (context, index) {
+          itemBuilder: (context, int index) {
             return Container(
               height: 50,
-              color: Colors.amber[600],
-              child: const Center(child: Text('ListViewBuilder')),
+              color: Colors.amber[colorCodes[index]],
+              child: Center(child: Text('ListViewBuilder ${entries[index]}')),
             );
           },
-          
         ),
       ),
     );
